@@ -1,0 +1,16 @@
+#echo "CURRENT DATE AND TIME: $DATE"; date
+#dat = $DATE -h
+hrs=$( date +"%H" )
+#if [ $DATE-"%H" -le "12:00:00" ]
+if [ "$hrs" -lt "12" ]
+then
+	echo "GOOD MORNING"
+#elif [ $DATE-"%H" -le "4:0:00" ]
+elif [ "$hrs" -lt "16" ]
+then 
+
+	echo "GOOD AFTERNOON"
+else
+#then
+	echo "GOOD EVENING"
+fi
